@@ -1,7 +1,7 @@
 import java.util.*;
 import java.io.*;
 
-class Main {
+public class Main {
     public static void main(String[] args) throws Exception {
         Scanner sc = new Scanner(new File("cownomics.in"));
         int typeNum = sc.nextInt();
