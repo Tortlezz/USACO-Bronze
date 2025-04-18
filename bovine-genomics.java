@@ -3,7 +3,7 @@ import java.io.*;
 
 class Main {
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
+        Scanner sc = new Scanner(new File("cownomics.in"));
         int typeNum = sc.nextInt();
         int letters = sc.nextInt();
 
@@ -35,8 +35,9 @@ class Main {
                 counter++;
             }
         }
-        
-        System.out.println(counter);
+
+        PrintWriter out = new PrintWriter(new File("cownomics.out"));
+        out.println(counter);
         
     }
 }
