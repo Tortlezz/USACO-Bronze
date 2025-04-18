@@ -2,7 +2,7 @@ import java.util.*;
 import java.io.*;
 
 class Main {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws Exception {
         Scanner sc = new Scanner(new File("cownomics.in"));
         int typeNum = sc.nextInt();
         int letters = sc.nextInt();
@@ -12,6 +12,7 @@ class Main {
         for (int i = 0; i < typeNum * 2; i++) {
             genome[i] = sc.next();
         }
+        sc.close();
         
         int counter = 0;
         
@@ -38,6 +39,6 @@ class Main {
 
         PrintWriter out = new PrintWriter(new File("cownomics.out"));
         out.println(counter);
-        
+        out.close();
     }
 }
